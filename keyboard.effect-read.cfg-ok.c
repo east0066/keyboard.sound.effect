@@ -105,6 +105,7 @@ void readcfg(const char *fname) {
 	FILE *file = fopen(fname, "r");
     if (file == NULL) {
         perror("Error opening file");
+        exit(1);
     }
     char line[MAX_LINE_LENGTH];
     char *str1, *str2;
